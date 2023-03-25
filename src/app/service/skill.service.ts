@@ -7,8 +7,8 @@ import { Skill } from '../model/skill';
   providedIn: 'root'
 })
 export class SkillService {
-  URL = 'http://localhost:8080/skill/';
-  //URL = 'https://frontap-f0b8b.web.app/skill/'
+  //URL = 'http://localhost:8080/skill/';
+  URL = 'https://backap2.onrender.com/skill/'
   
   constructor(private httpClient: HttpClient) { }
 

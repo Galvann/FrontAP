@@ -1,12 +1,13 @@
 <header class="py-5 bg-image-full" style="background-image:url(../../../assets/banner.jpg)">
 	<div class="text-center my-5">
-		<div class="d-inline m-0">
-			<button type="button" class="btn btn-primary m-3" routerLink="/editacercade/1" *ngIf="isLogged" >
-				Editar Perfil
-			</button>
+		<div class="d-inline m-0 d-block">
+			
 		</div>
 		<img class="img-fluid rounded-circle mb-4 w-25" src={{persona.img}} alt="..." />
 		<h1 class="text-white fs-3 fw-bolder">Full Stack Developer Jr</h1>
+		<button type="button" class="btn btn-primary m-3" routerLink="/editacercade/1" *ngIf="isLogged" >
+			Editar Perfil
+		</button>
 	</div>
 </header>
 <section class="resume-section m-5">
