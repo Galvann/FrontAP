@@ -1,23 +1,20 @@
 <header class="py-5 bg-image-full" style="background-image:url(../../../assets/banner.jpg)">
 	<div class="text-center my-5">
-		<div class="d-inline m-0 d-block">
-			
-		</div>
 		<img class="img-fluid rounded-circle mb-4 w-25" src={{persona.img}} alt="..." />
-		<h1 class="text-white fs-3 fw-bolder">Full Stack Developer Jr</h1>
-		<button type="button" class="btn btn-primary m-3" routerLink="/editacercade/1" *ngIf="isLogged" >
+		<h1 class="text-white display-3 fw-bolder">Full Stack Developer Jr</h1>
+		<button type="button" class="btn btn-primary float-end mt-3 me-3" routerLink="/editacercade/1" *ngIf="isLogged" >
 			Editar Perfil
 		</button>
 	</div>
 </header>
-<section class="resume-section m-5">
-	<div class="resume-section-content">
-		
-			<h1 class="mb-0 display-3">
-				{{persona.nombre}}
-				<span class="text-primary"> {{persona.apellido}} </span>
-			</h1>
-		</div>
-		<p class="col-12 m-0"> {{persona.descripcion}} </p>
-	
+
+<section class="perfil-section m-5">
+	<div class="perfil-section-content">
+		<h1 class="mb-0 display-3">
+			{{persona.nombre}}
+			<span class="text-primary">{{persona.apellido}}</span>
+		</h1>
+		<hr class="my-4">
+		<p class="col-10 m-0">{{persona.descripcion}}</p>
+	</div>
 </section>

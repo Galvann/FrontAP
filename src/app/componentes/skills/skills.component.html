@@ -46,9 +46,9 @@
   
   <div class="container">
     <div class="row mb-3">
-      <div *ngFor="let skill of skill" class="habilidades col">
-        <div class="skill-name display-4"><strong>{{skill.nombre}}</strong></div>
-        <progress class="display-4" id="file" max="100" value="{{skill.porcentaje}}"> {{skill.porcentaje}} </progress>  
+      <div *ngFor="let skill of skill" class="habilidades col mb-1">
+        <div class="skill-name display-4"><strong>{{skill.nombre}} {{skill.porcentaje}}%</strong></div>
+        <progress class="display-4" id="file" max="100" value="{{skill.porcentaje}}"> {{skill.porcentaje}} </progress>
         <td *ngIf="isLogged">
                                       
           <button class="btn btn-primary m-1" routerLink="/editskill/{{skill.id}}"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pencil" viewBox="0 0 16 16">
